@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">              <!-- CIS 128  HOMEWORK 1A assignment  -->
+    <head>                    <!--  Cia Rong Lee     2-14-2022      -->
+        <meta charset="utf-8">
+        <meta name ="description" content = " This project is to test your 
+         knowledge of HTML5, and CSS">
+        <title>Test your knowledge of HTML5, and CSS3</title>
+        <link rel="stylesheet" href="homewk1A.css">
+    </head>
+    <body>
+        <main id = "top" >
+            
+        <h1>Simple HTML & CSS Page</h1>
+        <div>
+            <label> &nbsp;</label>
+            <input type ="button" id ="start_animation" value = "Start Animation">
+        </div>
+        <img id="profile" src="Chia_Rong_Lee.jpg" alt="Chia Rong Lee Face Photo">
+        <p>My name is Chia Rong Lee and I am a student of College of San Mateo,
+           this is my third semester in CSM. </p>    
+        
+        <p id = "second_p">I am attending this class, because I want to get a certificate of 
+            Web/Mobile Appplication Development, I have a Computer Science background and used to work for 
+            Semiconductor company, but I am transitioning to the world of Web Development.  
+            It is a required course for me to complete this class, since I have basic knowledge of
+            Web, such as HTML5, CSS3, Javascript, Java, and SQL, now I try to put those knowledge 
+            together for this CIS-128 Mobile Web Application course.
+        </p>
+        
+        <h3>Technologies for this class</h3>
+        <ul>
+            <li><strong>HTML</strong></li>
+            <li><strong>CSS</strong></li>
+            <li><strong>Javascript</strong></li>
+        </ul>
+        <h3>Resoures</h3> 
+        <ul> 
+            <li><a href = "https://www.murach.com/index.html">  Murach Books</a>
+            <p> This publisher is offering <strong>Web development books, Programming language books and
+                Database/SQL books.</strong> If you are new to Web design or an old pro, these books are 
+                must-have in my opinion. I love how it starts out with the basics and then moves
+                on to the good stuff. Each chapter is full of examples and sample code showing you 
+                how to do the most common techniques that you will face as a web developer/designer.
+            </p></li>
+            <li><a href= "https://developer.mozilla.org/en-US/">Mozilla Developer Network(MDN)</a>
+            <p>MDN Web Docs (previously known as MDN — the Mozilla Developer Network) is an evolving 
+               learning platform for Web techniques, they also have a detailed set of beginner's learning material 
+               — see Learn Web development.
+               This open Web presents incredible opportunities for developers. It offers<strong> Web
+               Developer Reference, Web developer Guide, Tutorials for Web developers, Progressive Web
+               Apps (PWAs).</strong></p>
+            </li>
+        </ul>
+        
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>  
+   	<script>
+           "use strict";
+           $(document).ready( () => {
+                $("#start_animation").click(() => {
+             // runs when the "start animation" button is click 
+                $("#top h1").animate({ fontSize: "275%", color:"#aa0000"}, 5000)             
+                $("#top h1").animate({ fontSize: "200%",color:"navy"},5000 )
+                $("#profile").css({border: "0px solid #f37736"}).animate({
+                borderWidth: '4px', borderColor: '#f37736'},5000);  
+                }) // end click 
+            }); // end ready
+       </script> 
+       <a href="https://www.github.com" target="_blank" rel = "noopener noreferrer"> Go to Github.cccom" </a>
+  
+    </body>
+</html>
